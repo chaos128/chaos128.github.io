@@ -1,8 +1,5 @@
-import 'dart:html';
-
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class BigCard extends StatelessWidget {
   const BigCard({
@@ -23,7 +20,7 @@ class BigCard extends StatelessWidget {
     return Card(
       color: theme.colorScheme.primary, // ← And also this.
       child: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(10),
         child: Text(
           pair.asLowerCase,
           style: style,
